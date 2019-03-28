@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>链鹰资本-首页</title>
+	</head>
+	<script type="text/javascript">
+        // 移动端和PC端判断
+        var reg = /([a-zA-Z]+)?([a-zA-Z]+.*\;\s([a-zA-Z0-9]+)?)/;
+        var newNav = navigator.appVersion.match(reg);
+        if(newNav) {
+            var nav = newNav[0];
+            var navArr = nav.split(/(\s)|((\s\d\.\d)?\;)/);
+            var flag = false;
+            for (var i = 0, len = navArr.length; i < len; i++) {
+                if (navArr[i] == 'Android' || navArr[i] == 'iPhone' || navArr[i] == 'iPad' || navArr[i] == 'MeeGo' || navArr[i] == 'NokiaN9' || navArr[i] == 'NOKIA') {
+                    flag = true;
+                    break;
+                }
+            }
+            if (flag) {
+                window.location.href = "mobile/home.html";
+            }
+        }
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<body>
+	<div id="box">
+		<!--导航栏-->
+			<div class="header">
+				<div class="header_img"></div>
+				<div class="langular">中文<img src="img/xiala.png"/>
+					<span>
+						<a href="#">中文</a>
+						<a href="html/indexen.html">英文</a>
+					</span>
+				</div>
+				<ul class="header_lists">
+					<li>联系我们</li>
+					<li class="global"><a href="html/global.html">全球资源</a></li>
+					<li>财经资讯</li>
+					<li>第三方资源</li>
+					<li class="blockchain"><a href="html/blockchain.html">区块链研发</a></li>
+					<li class="samoye"><a href="html/samoye.html">萨摩亚交易所</a></li>
+					<li class="manage"><a href="html/manage.html">资本管理</a></li>
+					<li class="home"><a href="index.html">首页</a></li>
+				</ul>
+			</div>
+
+		<!--banner图部分-->
+		<div class="banner">
+			<img class="banner_img" src="img/beijing.png" />
+			<div class="banner_box">
+				<h3>链鹰资本</h3>
+				<div class="banner_img2"></div>
+				<p>我们致力于成为全球区块链资本中心</p>
+				<h4>链鹰资本</h4>
+			</div>
+		</div>
+
+		<!--内容区域-->
+		<div class="section">
+			<div class="section_box">
+				<!--资本管理-->
+				<div class="section_ziben">
+					<h3>资本管理</h3>
+					<img src="img/xian1.png" />
+					<h5>链鹰资本（ChainIn）</h5>
+					<p class="p1">是一家全球领先的区块链风险投资及资产管理机构</p>
+					<p class="p2">专注于区块链项目咨询研究</p>
+					<p class="p3">风险投资以及资产管理，整合行业资源</p>
+					<p class="p4">通过区块链创新及其所带来的商业变革，构建区块链产业生态圈</p>
+				</div>
+				<!--萨摩亚交易所-->
+				<div class="section_samoya">
+					<h3>萨摩亚交易所</h3>
+					<p>新一代区块链资产交易平台----交易手续费100%分红</p>
+					<ul class="samoya_neirong">
+						<li class="samoya_li_a">
+							<h4>安全</h4>
+							<p class="samoya_p1_top">数字资产采取离线冷钱包的方式存储</p>
+							<p class="samoya_p1_bottom">多重认证方式保障账户安全</p>
+						</li>
+						<li class="samoya_li_b">
+							<h4>规范</h4>
+							<p class="samoya_p2_top">主权国家官方认证</p>
+							<p class="samoya_p2_bottom">合规合法百分百数字货币保证金制度及时应对客户的提现需求</p>
+						</li>
+						<li class="samoya_li_c">
+							<h4>稳定</h4>
+							<p class="samoya_p3_top">用户数据在全球各地多重备份</p>
+							<p class="samoya_p3_bottom">出现故障立即恢复</p>
+						</li>
+						<li class="samoya_li_d">
+							<h4>服务</h4>
+							<p class="samoya_p4_top">客服人员7*24小时在线</p>
+							<p class="samoya_p4_bottom">随时帮助客户解决各种疑问和疑惑</p>
+						</li>
+					</ul>
+				</div>
+				<!--区块链研发-->
+				<div class="section_yanfa">
+					<h3>区块链研发</h3>
+					<img src="img/xian1.png" />
+					<p class="section_yanfa_p1">PCS π森链（Personal Chain Operation System）—— 最具爆发的主链</p>
+					<p class="section_yanfa_p2">一个轻量级去中心化区块链应用开发平台</p>
+					<div class="section_yanfa_da">
+						<span class="button1">目标</span>
+						<span class="button2">创新</span>
+						<ul class="section_yanfa_lists">
+							<li class="section_yanfa_lists_a">支持秒级处理速度</li>
+							<li class="section_yanfa_lists_b">共通性和兼容性设计</li>
+							<li class="section_yanfa_lists_c">人性化的区块链编程操作</li>
+							<li class="section_yanfa_lists_d">提升底层公链的可拓展性</li>
+							<li class="section_yanfa_lists_e">用户免费使用网络资源</li>
+						</ul>
+					</div>
+					<p class="section_yanfa_p3">AFT 阿凡提(AssetFun) —— 打造新一代价值型Token通证</p>
+					<p class="section_yanfa_p4">一个去中心化的通证平台</p>
+					<ul class="section_yanfa_db">
+						<li>
+							<p class="y">去中心化 收益共享</p>
+						</li>
+						<li>
+							<p class="c">应用上线 完全落地</p>
+						</li>
+						<li>
+							<p class="h">核心技术 数据共用</p>
+						</li>
+					</ul>
+				</div>
+				<!--第三方咨询-->
+				<div class="section_sanfang">
+					<h3>第三方咨询</h3>
+					<p>全球区块链投资与研究联合会</p>
+					<ul>
+						<li><span>商务咨询阶段</span></li>
+						<li><span>区块链需求定制</span></li>
+						<li><span>基石私募 海外架构</span></li>
+						<li><span>区块链基础开发</span></li>
+						<li><span>运营推广服务</span></li>
+						<li><span>交易平台上线</span></li>
+						<li><span>场外交易</span></li>
+					</ul>
+				</div>
+				<!--财经资讯-->
+				<div class="section_jide">
+					<h3>财经资讯</h3>
+					<img src="img/xian1.png" />
+					<div class="news">
+						<!--<div class="news_a">
+							<h3>链鹰资本全资收购PCS</h3>
+							<p class="text">2018年11月11日，暂停PCS的所有交易，链鹰资本全资收购PCS项目。</p>
+							<p class="title">
+								来源:<span>链鹰财讯</span>
+							</p>
+							<p class="time">2018/11/11</p>
+						</div>-->
+						<div class="news_b">
+							<h3>链鹰资本全资收购PCS</h3>
+							<p class="text">2018年11月11日，暂停PCS的所有交易，链鹰资本全资收购PCS项目。</p>
+							<p class="title">
+								来源:<span>链鹰财讯</span>
+							</p>
+							<p class="time">2018/11/11</p>
+						</div>
+
+					</div>
+
+
+
+				</div>
+				<!--全球资源-->
+				<div class="section_ziyuan">
+					<h3>全球资源</h3>
+					<p>全球区块链投资与研究联合会 —— 开拓全球视野 实现跨国共赢</p>
+					<div class="section_ziyuan_da">
+						<div class="shenlan"></div>
+						<div class="huang"></div>
+						<div class="jvhuang"></div>
+						<div class="zise"></div>
+						<div class="fenhong"></div>
+						<div class="qianlan"></div>
+						<div class="hong"></div>
+					</div>
+					<ul class="section_ziyuan_db">
+						<li><img src="img/1.png" /><p>以色列</p></li>
+						<li><img src="img/2.png" /><p>泰国</p></li>
+						<li><img src="img/3.png" /><p>柬埔寨</p></li>
+						<li><img src="img/4.png" /><p>澳门</p></li>
+						<li><img src="img/5.png" /><p>香港</p></li>
+						<li><img src="img/6.png" /><p>萨摩亚</p></li>
+						<li><img src="img/7.png" /><p>硅谷</p></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--footer联系我们-->
+		<div class="footer">
+			<h5>联系我们</h5>
+			<div></div>
+			<p>EMAIL:chainin1@hotmail.com</p>
+		</div>
+		<div class="btn">
+			<img src="img/top.png" />
+		</div>
+	</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript">
+
+		$(function(){
+			// banner图透明度的变化
+			$("html,body").ready(function(){
+                $(".banner_img").animate({opacity:1},6000);
+                $(".banner").find("h3").fadeIn(2000);
+                $(".banner").find("p").fadeIn(4000);
+                $(".banner").find("h4").fadeIn(6000);
+            })
+
+			//pcs内容切换
+			$(".button1").mousemove(function(){
+				$(this).css({"backgroundColor":"#ffffff","backgroundImage":"url('img/mubiaolan.png')"}).siblings(".button2").css({"backgroundColor":"#fbfbfb","backgroundImage":"url('img/chuangxinhei.png')"})
+				$(this).siblings(".section_yanfa_lists").html("<p class='section_yanfa_mubiao'>通过持续性的区块链技术研发和创新，为企业用户、普通用户搭建一个开放、透明、安全和多元化的生态系统。</p>");
+            })
+            $(".button2").mousemove(function(){
+                $(this).css({"backgroundColor":"#ffffff","backgroundImage":"url('img/chuangxinlan.png')"}).siblings(".button1").css({"backgroundColor":"#fbfbfb","backgroundImage":"url('img/mubiaohei.png')"});
+                $(this).siblings(".section_yanfa_lists").html("<li class=\"section_yanfa_lists_a\">支持秒级处理速度</li>\n" +
+                    "\t\t\t\t\t\t<li class=\"section_yanfa_lists_b\">共通性和兼容性设计</li>\n" +
+                    "\t\t\t\t\t\t<li class=\"section_yanfa_lists_c\">人性化的区块链编程操作</li>\n" +
+                    "\t\t\t\t\t\t<li class=\"section_yanfa_lists_d\">提升底层公链的可拓展性</li>\n" +
+                    "\t\t\t\t\t\t<li class=\"section_yanfa_lists_e\">用户免费使用网络资源</li>")
+            });
+
+			// 点击回到顶部
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>150){
+                    $(".btn").fadeIn(200);
+                };
+                if ($(window).scrollTop()< 150){
+                    $(".btn").fadeOut(200);
+                };
+            });
+            $(".btn").click(function(){
+                $("html,body").animate({scrollTop:0},800);
+                return false;
+            });
+            
+            
+        })
+	</script>
+</html>

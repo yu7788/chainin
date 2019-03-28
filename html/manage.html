@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>链鹰资本-资本管理</title>
+    <link rel="stylesheet" href="../css/manage.css">
+    <script src="../js/jquery-1.4.2.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="header">
+    <div class="header_img"></div>
+    <div class="langular">English<img src="../img/xiala.png"/>
+        <span>
+					<a href="#">中文</a>
+					<a href="#">英文</a>
+				</span>
+    </div>
+    <ul class="header_lists">
+        <li>联系我们</li>
+        <li class="global"><a href="global.html">全球资源</a></li>
+        <li>即得财经</li>
+        <li>第三方资源</li>
+        <li class="blockchain"><a href="blockchain.html">区块链研发</a></li>
+        <li class="samoye"><a href="samoye.html">萨摩亚交易所</a></li>
+        <li class="manage"><a href="manage.html">资本管理</a></li>
+        <li class="home"><a href="../index.html">首页</a></li>
+    </ul>
+</div>
+
+<section id="getintouch" class="bounceIn animated">
+
+
+    <div class="token">token内容</div>
+
+
+
+    <div class="section_box">
+        <div class="container">
+            <h1>
+                <span> * 请填写相关信息 * </span>
+            </h1>
+        </div>
+        <div class="container">
+            <form class="contact" action="#" method="post" id="form">
+                <div class="row clearfix">
+                    <div class="lbl">
+                        <label for="phone">
+                            电话:</label>
+                    </div>
+                    <div class="ctrl">
+                        <input type="text" id="phone" placeholder="Ex: 111-258-444">
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="lbl">
+                        <label for="number">
+                            数量:</label>
+                    </div>
+                    <div class="ctrl">
+                        <input type="text" id="number" placeholder="Ex: Your number">
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="lbl">
+                        <label for="address">
+                            认购地址(客户端):</label>
+                    </div>
+                    <div class="ctrl">
+                        <input type="text" id="address" placeholder="Ex: Your wallet address">
+                    </div>
+                </div>
+                <div class="row clearfix">
+                     <div class="lbl">
+                         <label for="message">
+                             认购产品(服务端):</label>
+                     </div>
+                     <div class="ctrl">
+                         <input type="radio" name="sex" value="male" id="message" checked><p class="ctrl_p">PCS</p>
+                     </div>
+                 </div>
+                <div class="row  clearfix">
+                    <div class="span10 offset2">
+                        <input type="submit" name="submit" id="submit" class="submit" value="提　交">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+<script type="text/javascript">
+    $(function(){
+        $(".section_box").slideDown(2000);
+    })
+</script>
+</html>

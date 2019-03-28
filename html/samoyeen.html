@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chain In-samoye</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../css/samoyeen.css"/>
+<body>
+<div class="header">
+    <div class="header_img"></div>
+    <div class="langular">English<img src="../img/xiala.png"/>
+        <span>
+					<a href="samoye.html">Chinese</a>
+					<a href="#">English</a>
+				</span>
+    </div>
+    <ul class="header_lists">
+        <li>Contact Us</li>
+        <li class="global"><a href="globalen.html">Global Resource</a></li>
+        <li>Financial</li>
+        <li>Consultation</li>
+        <li class="blockchain"><a href="blockchainen.html">Blockchain</a></li>
+        <li class="samoye"><a href="samoyeen.html">Samoa Exchange</a></li>
+        <li class="manage"><a href="manageen.html">Capital Management</a></li>
+        <li class="home"><a href="indexen.html">Home</a></li>
+    </ul>
+</div>
+<div class="banner_box">
+    <img src="../img/erji/banner2-ying.png" />
+</div>
+<!--内容区域-->
+<div class="section">
+    <div class="section_box">
+        <div class="section_box_top">
+            <p>Samoa block chain exchange is a state-approved exchange platform issued by the sovereign state of Samoa, operated by the global block chain investment and research joint association.</p>
+            <p>Samoa block chain exchange cooperates with Coinbell, based on the advantages of Coinbell asset security and asset value assessment. It maximizes the advantages of Samoa's block chain exchange and satisfies its basic attributes such as value storage, investment and circulation etc.</p>
+        </div>
+        <div class="section_box_zhong">
+            <p>Samoa block chain exchange cooperates with Coinbell, based on the advantages of Coinbell asset security and asset value assessment. It maximizes the advantages of Samoa's block chain exchange and satisfies its basic attributes such as value storage, investment and circulation etc.</p>
+        </div>
+        <div class="section_box_bottom">
+            <p>Samoa block chain exchange and Coinbell rely on a core elite team with many years of block chain experiences, create a unique contribution mechanism, to achieve multiple all-win results by means of advanced technical strength, excellent customer service and good user experience.</p>
+        </div>
+    </div>
+</div>
+<!--footer联系我们-->
+<div class="footer">
+    <h5>Please Contact Us</h5>
+    <div></div>
+    <p>EMAIL:chainin1@hotmail.com</p>
+</div>
+<div class="btn">
+    <img src="../img/top.png" />
+</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        // 点击回到顶部
+        $(window).scroll(function(){
+            if ($(window).scrollTop()>150){
+                $(".btn").fadeIn(200);
+            };
+            if ($(window).scrollTop()< 150){
+                $(".btn").fadeOut(200);
+            };
+        });
+        $(".btn").click(function(){
+            $("html,body").animate({scrollTop:0},800);
+            return false;
+        })
+    })
+</script>
+</html>

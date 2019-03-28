@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>链鹰资本-萨摩耶交易所</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/samoye.css"/>
+	<body>
+		<div class="header">
+			<div class="header_img"></div>
+			<div class="langular">中文<img src="../img/xiala.png"/>
+				<span>
+					<a href="#">中文</a>
+					<a href="samoyeen.html">英文</a>
+				</span>
+			</div>
+			<ul class="header_lists">
+				<li>联系我们</li>
+				<li class="global"><a href="global.html">全球资源</a></li>
+				<li>即得财经</li>
+				<li>第三方资源</li>
+				<li class="blockchain"><a href="blockchain.html">区块链研发</a></li>
+				<li class="samoye"><a href="samoye.html">萨摩亚交易所</a></li>
+				<li class="manage"><a href="manage.html">资本管理</a></li>
+				<li class="home"><a href="../index.html">首页</a></li>
+			</ul>
+		</div>
+		<div class="banner_box">
+			<img src="../img/erji/banner2.png" />
+		</div>
+		<!--内容区域-->
+		<div class="section">
+			<div class="section_box">
+				<div class="section_box_top">
+					<p>萨摩亚区块链交易所是由萨摩亚主权国家颁发的国家政府许可的交易所平台</p>
+					<p>最大程度发挥萨摩亚区块链交易所的优势，满足其价值存储、投资、流通等基本属性</p>
+				</div>
+				<div class="section_box_zhong">
+					<p>萨摩亚区块链交易所与Coinbell共同合作，基于Coinbell资产安全和资产价值评估的优势</p>
+					<p>最大程度发挥萨摩亚区块链交易所的优势，满足其价值存储、投资、流通等基本属性</p>
+				</div>
+				<div class="section_box_bottom">
+					<p>萨摩亚区块链交易所及Coinbell依托于拥有多年区块链经验的核心精英团队</p>
+					<p>首创独特的贡献机制，凭借领先的技术实力、优质的客户服务和良好的用户体验</p>
+				</div>
+			</div>
+		</div>
+		<!--footer联系我们-->
+		<div class="footer">
+			<h5>联系我们</h5>
+			<div></div>
+			<p>EMAIL:chainin1@hotmail.com</p>
+		</div>
+		<div class="btn">
+			<img src="../img/top.png" />
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript">
+        $(function(){
+            // 点击回到顶部
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>150){
+                    $(".btn").fadeIn(200);
+                };
+                if ($(window).scrollTop()< 150){
+                    $(".btn").fadeOut(200);
+                };
+            });
+            $(".btn").click(function(){
+                $("html,body").animate({scrollTop:0},800);
+                return false;
+            })
+        })
+	</script>
+</html>

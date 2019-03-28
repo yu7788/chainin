@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>链鹰资本-区块链研发</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/blockchain.css"/>
+	<body>
+		<div class="header">
+			<div class="header_img"></div>
+			<div class="langular">中文<img src="../img/xiala.png"/>
+				<span>
+					<a href="#">中文</a>
+					<a href="blockchainen.html">英文</a>
+				</span>
+			</div>
+			<ul class="header_lists">
+				<li>联系我们</li>
+				<li class="global"><a href="global.html">全球资源</a></li>
+				<li>即得财经</li>
+				<li>第三方资源</li>
+				<li class="blockchain"><a href="blockchain.html">区块链研发</a></li>
+				<li class="samoye"><a href="samoye.html">萨摩亚交易所</a></li>
+				<li class="manage"><a href="manage.html">资本管理</a></li>
+				<li class="home"><a href="../index.html">首页</a></li>
+			</ul>
+		</div>
+			<div class="banner_box">
+				<img src="../img/erji/banner1.png" />
+			</div>
+		<div class="section">
+			<div class="section_box">
+				<div class="section_top">
+					<a href="../PCS白皮书(beta%201.0)中文版.docx" download="../PCS白皮书(beta%201.0)中文版.docx">
+						<div class="section_top_left">
+							<p>点击下载白皮书</p>
+						</div>
+					</a>
+					<div class="section_top_right">
+						<h2>PCS项目简介</h2>
+						<p class="top_right_p1">PCS公链是一个支持多行业的去中心化区块链应用开发平台，通过完善的设计， 将区块链技术的优势以更加灵活便捷的方式带给不同行业的应用者和普通互联网用户。</p>
+						<p class="top_right_p2">PCS通过共通性和兼容性创新、提升底层公链的可拓展性、支持秒级处理速度等技术优势。</p>
+						<ul>
+							<li>采用委托权益证明机制（Delegated Proof of Stake）的共识机制，</li>
+							<li>避免了工作量证明（Proof of Power）的资源浪费，</li>
+							<li>和权益证明机制（Proof of Stake）的中心化趋向，</li>
+							<li>系统也更快更安全，为企业级应用奠定了基础。</li>
+						</ul>
+						<p class="top_right_p3">七层架构模型：</p>
+						<p class="top_right_p4">资源层、协议层、共识层、合约层、工具层、去中心化应用层、生态层</p>
+					</div>
+				</div>
+				<div class="section_bottom">
+					<a href="../AssetFun_中文白皮书.docx" download="../AssetFun_中文白皮书.docx">
+						<div class="bottom_left">
+							<p>点击下载白皮书</p>
+						</div>
+					</a>
+					<div class="bottom_right">
+						<h2>AFT项目简介</h2>
+						<p>ASSETFUN是一个去中心化的通证生态平台。ASSETFUN公共区块链为现实世界与数字资产构建人性化的桥梁，能够让链上用户自由发起市场预测、创建通证（Token）、开发去中心化应用（DAPP）等。</p>
+						<p>ASSETFUN能够打破实体经济和区块链之间的壁垒，为企业提供资产通证化服务，将现实资产数字化、流通化、价值化，并通过通证市场将各个行业群体结成链上共享生态圈。各通证间共享生态资源，用户持有通证可以使用生态圈内所有服务、产品及权益等，避免单一通证的价值孤岛，实现价值共享最大化。</p>
+						<p>发通证，就选AssetFun（AFT阿凡提）</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer联系我们-->
+		<div class="footer">
+			<h5>联系我们</h5>
+			<div></div>
+			<p>EMAIL:chainin1@hotmail.com</p>
+		</div>
+		<div class="btn">
+			<img src="../img/top.png" />
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript">
+        $(function(){
+            // 点击回到顶部
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>150){
+                    $(".btn").fadeIn(200);
+                };
+                if ($(window).scrollTop()< 150){
+                    $(".btn").fadeOut(200);
+                };
+            });
+            $(".btn").click(function(){
+                $("html,body").animate({scrollTop:0},800);
+                return false;
+            })
+        })
+	</script>
+</html>
