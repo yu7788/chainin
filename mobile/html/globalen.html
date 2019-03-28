@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <title>ChainIn-Global Resource</title>
+    <link rel="stylesheet" href="../css/globalen.css">
+    <script src="../js/jquery-1.4.2.min.js"></script>
+</head>
+<body onload="quk()">
+<div id="wrapper">
+    <div id="scroller">
+        <header>
+            <img src="../imgages/shouye/lianying-logo.png" />
+            <div class="daohang"></div>
+            <div class="language">English
+                <span>
+                           <a href="global.html">中文</a>
+                            <a href="#">English</a>
+                       </span>
+            </div>
+            <ul class="daohang_box">
+                <li class="home"><a href="homeen.html">Home</a></li>
+                <!--<li class="manage"><a href="manage.html">资本管理</a></li>-->
+                <li class="manage">Capital Management</li>
+                <li class="samoye"><a href="samoyeen.html">SAMOA</a></li>
+                <li class="blockchain"><a href="blockchainen.html">Blockchain</a></li>
+                <li>Consultation</li>
+                <li>Financial</li>
+                <li class="global"><a href="#">Global Resource</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <div class="banner">
+                <img src="../imgages/erji/lianying-quanqiuziyuan-banner-en.png" />
+            </div>
+
+            <div class="global_section">
+                <h3>The global block chain investment and research federation</h3>
+                <p class="section_box_p2">made up of social elites, block chain celebrities<br />world organization leaders, business leaders, and related block chain elites<br />Headquarter locates in Li ka-shing’s villa, Hong Kong's richest man.</p>
+
+                <div class="lunbotu">
+                    <ul>
+                        <li class="p1">
+                            <img class="dada" src="../imgages/erji/erji5.jpg" />
+                        </li>
+                        <li class="p2">
+                            <img src="../imgages/erji/erji1.jpg" />
+                        </li>
+                        <li class="p3">
+                            <img src="../imgages/erji/erji3.jpg" />
+                        </li>
+                    </ul>
+                    <div class="big"></div>
+                </div>
+
+                <p class="section_box_p3">The global block chain investment and research joint association aims to create an open and inclusive multinational alliance<br />Seeking common development opportunities for the members of the joint association and promoting<br />cross-border investment cooperation to achieve the goal of decentralization fairness and transparency in the new world</p>
+                <p class="section_box_p4">The joint association cooperated with sovereign states, strengthened international economic and trade cooperation<br />and promoted the decentralization concept, promoted national economic development and provide international development opportunities<br />for block chain startups and entrepreneurs. The joint association actively develop charity programs and promote balanced development of the world</p>
+            </div>
+
+            <div class="global_footer">
+                <h5>Please contact us</h5>
+                <div></div>
+                <p>EMAIL:chainin1@hotmail.com</p>
+            </div>
+        </section>
+
+
+
+
+
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+function quk() {
+    $(function () {
+        $(".banner").slideDown(2000);
+
+        $(".daohang").click(function () {
+            if ($(".daohang_box").css("display") == "none") {
+                $(".daohang_box").fadeIn(600);
+            } else {
+                $(".daohang_box").fadeOut(600);
+            }
+        });
+        $("section").click(function () {
+            $(".daohang_box").fadeOut(600);
+        });
+
+        $(".language").click(function () {
+            if ($(this).find("span").find("a").css("display") == "none") {
+                $(this).find("span").find("a").fadeIn(200);
+            } else {
+                $(this).find("span").find("a").fadeOut(200);
+            }
+        });
+        $("section").click(function () {
+            $(".language").find("span").find("a").fadeOut(200);
+        });
+
+        // 轮播图
+        var timer = "";
+        var arr = ['p1', 'p2', 'p3'];
+        var index = 0;
+        //图片自动轮播
+        timer = setInterval(btn_right, 1500);
+
+        //点击上一张的封装函数
+        function btn_left() {
+            arr.unshift(arr[2]);
+            arr.pop();
+            $('.lunbotu ul').find("li").each(function (i, e) {
+                $(e).removeClass().addClass(arr[i]);
+            })
+            index--;
+            if (index < 0) {
+                index = 2;
+            }
+        }
+
+        //点击下一张的封装函数
+        function btn_right() {
+            arr.push(arr[0]);
+            arr.shift();
+            $('.lunbotu  ul').find("li").each(function (i, e) {
+                $(e).removeClass().addClass(arr[i]);
+            })
+            index++;
+            if (index > 2) {
+                index = 0;
+            }
+        }
+
+
+        // 点击放大
+        $(".lunbotu ul").find("li").click(function () {
+            clearInterval(timer);
+            $(".big").fadeIn(500).html($(this).html());
+            $(".big").find("img").css({
+                height: "4rem",
+                width: "5rem",
+                border: "0.06rem solid #ffffff",
+                boxShadow: "0 0 0.06rem 0.03rem #c6c4c5",
+                borderRadius: "0.1rem"
+            })
+            event.preventDefault();    //阻止默认行为
+            event.stopPropagation();    //  阻止事件冒泡
+        })
+        //点击消失
+        $(".big").click(function () {
+            $(this).hide(0);
+            timer = setInterval(btn_right, 1500);
+
+            event.preventDefault();    //阻止默认行为
+            event.stopPropagation();    //  阻止事件冒泡
+        })
+    });
+}
+</script>
+</html>

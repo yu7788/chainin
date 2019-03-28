@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <title>ChainIn-Home</title>
+    <link rel="stylesheet" href="../css/homeen.css">
+    <script src="../js/jquery-1.4.2.min.js"></script>
+    <script src="../js/homeen.js"></script>
+</head>
+<body onload="quk()">
+<div id="wrapper">
+    <div id="scroller">
+        <header>
+            <img src="../imgages/shouye/lianying-logo.png" />
+            <div class="daohang"></div>
+            <div class="language">English
+                <span>
+                   <a href="../home.html">中文</a>
+                    <a href="#">English</a>
+               </span>
+            </div>
+            <ul class="daohang_box">
+                <li class="home"><a href="#">Home</a></li>
+                <li class="manage">Capital Management</li>
+                <!--<li class="manage"><a href="html/manage.html">资本管理</a></li>-->
+                <li class="samoye"><a href="samoyeen.html">SAMOA</a></li>
+                <li class="blockchain"><a href="blockchainen.html">Blockchain</a></li>
+                <li>Consultation</li>
+                <li>Financial</li>
+                <li class="global"><a href="globalen.html">Global Resource</a></li>
+                <!--<li>Contact Us</li>-->
+            </ul>
+        </header>
+        <section>
+            <div class="banner">
+                <img src="../imgages/shouye/lianying-shouye-banner-en.png" />
+            </div>
+
+            <!--资本管理-->
+            <div class="zibenguanli">
+                <h2>Capital Management</h2>
+                <img src="../imgages/shouye/lianying-shouye-zibenguanlifenjie.png" />
+                <h3>ChainIn</h3>
+                <p>Chainin capital is a global leading block chain venture investment and asset management institution,</p>
+                <p>focusing on consultation and research of block chain projects, </p>
+                <p>venture investment and asset management, and integration of industry resources,</p>
+                <p>through the innovation of block chain and the business revolution brought by it, constructing the block chain industrial ecosystem.</p>
+            </div>
+
+            <!--萨摩亚交易所-->
+            <div class="home_samoye">
+                <h2>SAMOA EXCHANGE</h2>
+                <p class="p_tit">A New Generation of Block Chain Assets Trading Platform</p>
+                <ul class="lists_samoye">
+                    <li>
+                        <p>Digital assets are stored in the form of offline zero wallet<br />and accounts are secured by multiple authentication</p>
+                    </li>
+                    <li>
+                        <p>Official sovereign states certification,legal compliance<br />The 100 % digital currency deposit system can meet the<br />customer's demand for withdrawal in a timely manner</p>
+                    </li>
+                    <li>
+                        <p>Multiple backups of user data across the world<br />with immediate recovery after breakdown</p>
+                    </li>
+                    <li>
+                        <p>The customer service staff is on line for <br />*24 hours and is at any time to help customers<br />solve all kinds of questions and doubts</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!--区块链开发-->
+            <div class="home_blockchain">
+                <h2>Blockchain</h2>
+                <img src="../imgages/shouye/lianying-shouye-zibenguanlifenjie.png" />
+                <div class="div_p">
+                    <p>Personal Chain Operation System</p>
+                    <p>——The most explosive main chain</p>
+                    <p>A lightweight decentralized block chain application development platform</p>
+                </div>
+                <div class="section_yanfa_da">
+                    <span class="button1">Aim</span>
+                    <span class="button2">Point</span>
+                    <ul class="section_yanfa_lists">
+                        <li class="section_yanfa_lists_a">Support second processing speed</li>
+                        <li class="section_yanfa_lists_b">commonality and compatibility design</li>
+                        <li class="section_yanfa_lists_c">humanized block chain programming operation</li>
+                        <li class="section_yanfa_lists_d">enhance the extensibility of the underlying public chain</li>
+                        <li class="section_yanfa_lists_e">free use of network resources by users</li>
+                    </ul>
+                </div>
+                <p class="section_yanfa_p3">Assetfun —— Create a new generation of value Token pass certificate</p>
+                <p class="section_yanfa_p4">A Decentralized Identification Ecological Platform</p>
+                <ul class="section_yanfa_db">
+                    <li>
+                        <p class="y"><span>Decentralization  Sharing Revenue</span></p>
+                    </li>
+                    <li>
+                        <p class="c"><span>Application online and lands completely</span></p>
+                    </li>
+                    <li>
+                        <p class="h"><span>Key Technology Data Sharing</span></p>
+                    </li>
+                </ul>
+            </div>
+
+            <!--第三方咨询-->
+            <div class="zixun">
+                <h2>Chainin Block Chain Ecology</h2>
+                <p>Global joint association of block chain investment and research</p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <!--即得财经-->
+            <div class="home_jide">
+                <h2>Jide.net</h2>
+                <img src="../imgages/shouye/lianying-shouye-zibenguanlifenjie.png" />
+                <div class="home_jide_d">
+                    <p>Jide finance is a one-stop block chain media service platform integrating industry news, news flash,<br /> market price and data.</p>
+                    <p>On the basis of providing fast and accurate industry information<br />we focus on building a more authoritative block chain expert column, committed to providing the best quality and efficient media services for block chain investment and entrepreneurship enthusiasts.</p>
+                </div>
+
+            </div>
+
+            <!--全球资源-->
+            <div class="home_global_box">
+                <div class="home_global">
+                    <h2>Global Resource</h2>
+                    <p>Broaden global vision and achieve all-win results across borders</p>
+                    <img src="../imgages/shouye/1-1.png" />
+                    <ul class="home_global_db">
+                        <li><img src="../imgages/shouye/1.png" /><p>Israel</p></li>
+                        <li><img src="../imgages/shouye/2.png" /><p>Thailand</p></li>
+                        <li><img src="../imgages/shouye/3.png" /><p>Cambodia</p></li>
+                        <li><img src="../imgages/shouye/4.png" /><p>Macao</p></li>
+                        <li><img src="../imgages/shouye/5.png" /><p>Hong Kong</p></li>
+                        <li><img src="../imgages/shouye/6.png" /><p>Samoa</p></li>
+                        <li><img src="../imgages/shouye/7.png" /><p>Silicon Valley</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--联系我们-->
+            <div class="home_footer">
+                <h5>Please contact us</h5>
+                <div></div>
+                <p>EMAIL:chainin1@hotmail.com</p>
+            </div>
+        </section>
+    </div>
+</div>
+<!--回到顶部-->
+<div class="btn">
+    <img src="../imgages/top.png" />
+</div>
+</body>
+</html>

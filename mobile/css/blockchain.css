@@ -1,0 +1,175 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+header{
+    height: 0.9rem;
+    background: #1b1b20;
+    position: relative;
+}
+header >img{
+    height: 0.55rem;
+    width: 1rem;
+    float: left;
+    margin-left: 0.18rem;
+    margin-top: 0.16rem;
+}
+.language{
+    line-height: 0.9rem;
+    font-size: 0.24rem;
+    color: #ffffff;
+    text-align: center;
+    float: right;
+}
+.language >span{
+    display: block;
+    width: 1rem;
+    z-index: 10;
+    top: 0.9rem;
+    position: absolute;
+    line-height: 0.45rem;
+    background: #1b1b20;
+}
+.language >span >a{
+    color: #ffffff;
+    height: 0.45rem;
+    display: none;
+}
+.daohang{
+    height: 0.25rem;
+    width: 0.28rem;
+    margin: 0.33rem 0.2rem 0 0.18rem;
+    float: right;
+    background: url("../imgages/shouye/lianying-shouye-icon.png") no-repeat center;
+    -webkit-background-size: 0.28rem 0.25rem;
+    background-size: 0.28rem 0.25rem;
+}
+.daohang_box{
+    position: absolute;
+    top: 0.72rem;
+    right: 0.07rem;
+    height: 4.85rem;
+    width: 1.72rem;
+    background: url("../imgages/shouye/xiala.png") no-repeat center;
+    background-size: 1.72rem 4.85rem;
+    z-index: 100;
+    display: none;
+}
+.daohang_box >li{
+    font-size: 0.2rem;
+    color: #626264;
+    margin-top: 0.25rem;
+    padding-left: 0.13rem;
+    text-align: left;
+}
+.daohang_box >li >a{
+    color: #626264;
+}
+.banner{
+    display: none;
+    width: 100%;
+}
+.banner >img{
+    height: 3.18rem;
+    width: 100%;
+    margin: 0 auto;
+}
+.pcs_aft{
+    height: 11.85rem;
+    width: 100%;
+    background: #f3f3f3;
+}
+.pcs{
+    width: 6.73rem;
+    height: 6.15rem;
+    padding-top: 0.35rem;
+    background: url("../imgages/erji/lianying-qukuailianyanfa-pcs.png") no-repeat center;
+    background-size: 3.12rem 3.51rem;
+    margin: 0 auto;
+}
+.pcs >h2{
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    font-weight: 600;
+}
+.pcs_p1{
+    margin-top: 0.1rem;
+    font-size: 0.2rem;
+    text-indent: 2em;
+    line-height: 0.4rem;
+    letter-spacing: 0.01rem;
+}
+.pcs_p2{
+    margin-top: 0.1rem;
+    font-size: 0.2rem;
+    text-indent: 2em;
+    line-height: 0.4rem;
+    letter-spacing: 0.01rem;
+}
+.pcs li{
+    line-height: 0.4rem;
+    font-size: 0.2rem;
+    letter-spacing: 0.01rem;
+    text-indent: 2em;
+}
+.pcs_p3{
+    margin-top: 0.1rem;
+    font-size: 0.2rem;
+    line-height: 0.4rem;
+    letter-spacing: 0.01rem;
+}
+.aft{
+    width: 6.73rem;
+    height: 5.62rem;
+    margin: 0 auto;
+    background: url("../imgages/erji/lianying-qukuailianyanfa-aft.png") no-repeat center;
+    background-size: 4.81rem 1rem;
+}
+.aft >h2{
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    font-weight: 600;
+}
+.aft p{
+    margin-top: 0.1rem;
+    font-size: 0.2rem;
+    text-indent: 2em;
+    line-height: 0.4rem;
+    letter-spacing: 0.01rem;
+}
+.blockchain_footer{
+    height: 4.8rem;
+    width: 100%;
+    background: #292a33;
+    z-index: 20;
+    position: relative;
+}
+.blockchain_footer >h5{
+    position: absolute;
+    top: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #c5c7c6;
+}
+.blockchain_footer >div{
+    width: 80%;
+    height: 0.02rem;
+    background: #ffffff;
+    position: absolute;
+    top: 3.1rem;
+    left: 10%;
+}
+.blockchain_footer >p{
+    position: absolute;
+    top: 3.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.18rem;
+    letter-spacing: 0.03rem;
+    color: #c5c5c5;
+}

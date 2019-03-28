@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <title>链鹰资本-资本管理</title>
+    <link rel="stylesheet" href="../css/manage.css">
+    <script src="../../js/iscroll.js"></script>
+    <script src="../../js/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="scroller">
+        <header>
+            <img src="../imgages/shouye/lianying-logo.png" />
+            <div class="daohang"></div>
+            <div class="language">中文
+                <span>
+                           <a href="#">中文</a>
+                            <a href="#">English</a>
+                       </span>
+            </div>
+            <ul class="daohang_box">
+                <li class="home"><a href="../home.html">首页</a></li>
+                <li class="manage"><a href="manage.html">资本管理</a></li>
+                <li class="samoye"><a href="samoye.html">萨摩亚交易所</a></li>
+                <li class="blockchain"><a href="blockchain.html">区块链研发</a></li>
+                <li>第三方咨询</li>
+                <li>即得财经</li>
+                <li class="global"><a href="global.html">全球资源</a></li>
+                <li>联系我们</li>
+            </ul>
+        </header>
+        <section id="getintouch" class="bounceIn animated">
+
+            <div class="token"></div>
+            <div class="section_box">
+                <div class="container">
+                    <h1>
+                        <span> * 请填写相关信息 * </span>
+                    </h1>
+                </div>
+                <div class="container">
+                    <form class="contact" action="#" method="post" id="form">
+                        <div class="row clearfix">
+                            <div class="lbl">
+                                <label for="phone">
+                                    电话:</label>
+                            </div>
+                            <div class="ctrl">
+                                <input type="text" id="phone" placeholder="Ex: 111-258-444">
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="lbl">
+                                <label for="number">
+                                    数量:</label>
+                            </div>
+                            <div class="ctrl">
+                                <input type="text" id="number" placeholder="Ex: Your number">
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="lbl">
+                                <label for="address">
+                                    认购地址(客户端):</label>
+                            </div>
+                            <div class="ctrl">
+                                <input type="text" id="address" placeholder="Ex: Your product">
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="lbl">
+                                <label for="message">
+                                    认购产品(服务端):</label>
+                            </div>
+                            <div class="ctrl">
+                                <input type="radio" name="sex" value="male" id="message" checked><p class="ctrl_p">PCS</p>
+                            </div>
+                        </div>
+
+                        <!--点击提交-->
+                        <input type="submit" name="submit" id="submit" class="submit" value="提　交">
+
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+
+    $(function(){
+        //导航菜单栏的出现和消失
+        $(".daohang").click(function(){
+            if ($(".daohang_box").css("display") == "none"){
+                $(".daohang_box").fadeIn(600);
+            } else{
+                $(".daohang_box").fadeOut(600);
+            }
+        })
+
+
+       /* $(function(){
+            $(".section_box").slideDown(2000);
+        })*/
+
+
+        })
+</script>
+</html>

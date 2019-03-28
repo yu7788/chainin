@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <title>ChainIn-Research</title>
+    <link rel="stylesheet" href="../css/blockchainen.css">
+    <script src="../js/jquery-1.4.2.min.js"></script>
+</head>
+<body onload="quk()">
+<div id="wrapper">
+    <div id="scroller">
+        <header>
+            <img src="../imgages/shouye/lianying-logo.png" />
+            <div class="daohang"></div>
+            <div class="language">English
+                <span>
+                   <a href="blockchain.html">中文</a>
+                    <a href="#">English</a>
+               </span>
+            </div>
+            <ul class="daohang_box">
+                <li class="home"><a href="homeen.html">Home</a></li>
+                <!--<li class="manage"><a href="manage.html">资本管理</a></li>-->
+                <li class="manage">Capital Management</li>
+                <li class="samoye"><a href="samoyeen.html">SAMOA</a></li>
+                <li class="blockchain"><a href="#">Blockchain</a></li>
+                <li>Consultation</li>
+                <li>Financial</li>
+                <li class="global"><a href="globalen.html">Global Resource</a></li>
+            </ul>
+        </header>
+        <section>
+            <div class="banner">
+                <img src="../imgages/erji/lianying-qukuailianyanfa-banner-en.png" />
+            </div>
+
+            <div class="pcs_aft">
+                <div class="pcs">
+                    <h2>PCS Project Brief</h2>
+                    <p class="pcs_p1">PCS public chain is a decentralized block chain application development platform supporting multiple industries. Bring the advantages of block chain technology to users of different industries and ordinary Internet users in a more flexible and convenient way.
+                    </p>
+                    <p  class="pcs_p2">PCS takes advantage of technological advantages such as commonality and compatibility innovation, improvement of scalability of the underlying public chain, and support of second processing speed</p>
+                    <ul>
+                        <li>Adopting the consensual mechanism of Delegated Proof of Stake</li>
+                        <li>avoid the waste of resources in Proof of Power</li>
+                        <li>and the centralization trend of the Proof of rights and interests mechanism</li>
+                        <li>the system is also faster and more secure, laying the foundation for enterprise application</li>
+                    </ul>
+                    <p class="pcs_p3">Seven layer models:<br />Resource layer、Protocol layer、Consensus layer、Contract layer、Tool layer、Decentralized application layer、Ecological layer</p>
+
+                </div>
+                <div class="aft">
+                    <h2>AFT Project Brief</h2>
+                    <p class="aft_p1">ASSETFUN can break down the barriers between real economy and block chain, provide enterprises with assets certification services, make realization of assets digitization, circulation and valuation, and form a shared ecosystem of various industry groups through market.</p>
+                    <p class="aft_p2">The ecological resources can be shared among all kinds of tokens and users holding tokens can use all the services, products and rights and interests in the ecosystem to avoid the value island of single token and realize the maximization of value sharing.</p>
+                    <p class="aft_p3">To issue token, please select AssetFun (AFT)</p>
+                </div>
+            </div>
+
+            <div class="blockchain_footer">
+                <h5>Please contact us</h5>
+                <div></div>
+                <p>EMAIL:chainin1@hotmail.com</p>
+            </div>
+        </section>
+
+
+
+
+
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+function quk() {
+    $(function () {
+        $(".banner").slideDown(2000);
+
+        $(".daohang").click(function () {
+            if ($(".daohang_box").css("display") == "none") {
+                $(".daohang_box").fadeIn(600);
+            } else {
+                $(".daohang_box").fadeOut(600);
+            }
+        });
+        $("section").click(function () {
+            $(".daohang_box").fadeOut(600);
+        });
+
+        $(".language").click(function () {
+            if ($(this).find("span").find("a").css("display") == "none") {
+                $(this).find("span").find("a").fadeIn(200);
+            } else {
+                $(this).find("span").find("a").fadeOut(200);
+            }
+        });
+        $("section").click(function () {
+            $(".language").find("span").find("a").fadeOut(200);
+        });
+    });
+}
+</script>
+</html>

@@ -1,0 +1,605 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+#wrapper{
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+}
+
+header{
+    height: 0.9rem;
+    background: #1b1b20;
+    position: relative;
+}
+header >img{
+    height: 0.55rem;
+    width: 1rem;
+    float: left;
+    margin-left: 0.18rem;
+    margin-top: 0.16rem;
+}
+.language{
+    line-height: 0.9rem;
+    font-size: 0.24rem;
+    color: #ffffff;
+    text-align: center;
+    float: right;
+    /*position: relative;*/
+}
+.language >span{
+    display: block;
+    width: 1rem;
+    z-index: 10;
+    top: 0.9rem;
+    position: absolute;
+    line-height: 0.45rem;
+    background: #1b1b20;
+}
+.language >span >a{
+    color: #ffffff;
+    height: 0.45rem;
+    display: none;
+}
+.daohang{
+    height: 0.25rem;
+    width: 0.28rem;
+    margin: 0.33rem 0.2rem 0 0.18rem;
+    float: right;
+    background: url("../imgages/shouye/lianying-shouye-icon.png") no-repeat center;
+    -webkit-background-size: 0.28rem 0.25rem;
+    background-size: 0.28rem 0.25rem;
+}
+.daohang_box{
+    position: absolute;
+    top: 0.72rem;
+    right: 0.07rem;
+    height: 4.85rem;
+    width: 1.72rem;
+    background: url("../imgages/shouye/xiala.png") no-repeat center;
+    background-size: 1.72rem 4.85rem;
+    z-index: 100;
+    display: none;
+}
+.daohang_box >li{
+    font-size: 0.2rem;
+    color: #626264;
+    margin-top: 0.25rem;
+    padding-left: 0.13rem;
+    text-align: left;
+}
+.daohang_box >li >a{
+    color: #626264;
+}
+.banner{
+    display: none;
+    width: 100%;
+}
+.banner >img{
+    height: 3.18rem;
+    width: 100%;
+    margin: 0 auto;
+}
+section{
+    position: relative;
+}
+.zibenguanli{
+    height: 4.7rem;
+    background: #f3f3f3;
+    position: relative;
+}
+.zibenguanli >h2{
+    text-align: center;
+    padding-top: 0.3rem;
+    font-size: 0.24rem;
+    font-weight: 600;
+}
+.zibenguanli >img{
+    padding-top: 0.15rem;
+    height: 0.15rem;
+    width: 4.6rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.3rem;
+}
+.zibenguanli >h3{
+    display: none;
+    text-align: center;
+    padding-top: 0.4rem;
+    font-size: 0.24rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+}
+.zibenguanli >p{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0.18rem;
+    font-size: 0.2rem;
+}
+.home_samoye{
+    height: 6.5rem;
+    background: #494f5f;
+    position: relative;
+}
+.home_samoye >h2{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0.3rem;
+    font-size: 0.24rem;
+    color: #ffffff;
+    font-weight: 600;
+    background: url("../imgages/shouye/huangse.png") no-repeat center;
+    -webkit-background-size: 7rem 0.01rem;
+    background-size: 7rem 0.01rem;
+}
+.home_samoye >p{
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0.8rem;
+    font-size: 0.18rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+.lists_samoye{
+    padding-top: 1.4rem;
+    margin: 0 auto;
+    width: 6.5rem;
+}
+.lists_samoye >li{
+    margin-bottom: 0.3rem;
+    width: 100%;
+    /*height: 0.9rem;*/
+}
+/*.lists_samoye >li >p:first-child{
+    float: left;
+    height: 0.9rem;
+    width: 0.9rem;
+    font-size: 0.12rem;
+    text-align: center;
+    line-height: 0.9rem;
+    background:url("../imgages/shouye/lianying-shouye-jiaoyisuo-yuan.png") no-repeat center;
+    background-size: 0.9rem 0.9rem;
+}*/
+.lists_samoye >li >p{
+    width: 100%;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #ffffff;
+}
+.lists_samoye >li:nth-child(1) >p:last-child,.lists_samoye >li:nth-child(3) >p:last-child{
+    margin-top: 0.1rem;
+}
+
+/*区块链研发*/
+.home_blockchain{
+    height: 10.5rem;
+    position: relative;
+}
+.home_blockchain >h2{
+    text-align: center;
+    padding-top: 0.3rem;
+    font-size: 0.36rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+}
+.home_blockchain >img{
+    padding-top: 0.15rem;
+    height: 0.15rem;
+    width: 4.6rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.3rem;
+}
+.home_blockchain >.div_p{
+    position: absolute;
+    width: 100%;
+    top: 1.3rem;
+}
+.home_blockchain >.div_p >p{
+    font-size: 0.2rem;
+    text-align: center;
+    margin-bottom: 0.14rem;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+}
+.section_yanfa_da{
+    margin: 2.15rem auto 0;
+    height: 3.2rem;
+    width: 7rem;
+    box-shadow: 0 0 0.06rem 0.03rem #f4f4f4;
+}
+.button1{
+    width: 3.5rem;
+    height: 0.6rem;
+    box-shadow: 0 0 0.08rem 0.04rem #f7f7f7;
+    font-size: 0.16rem;
+    text-align: center;
+    line-height: 0.6rem;
+    background: url("../imgages/shouye/lianying-shouye-icon-mubiao.png") no-repeat 1.14rem 50%;
+    background-size: 0.26rem 0.26rem;
+    background-color: #f7f7f7;
+    float: left;
+}
+.button2{
+    width: 3.5rem;
+    height: 0.6rem;
+    box-shadow: 0 0 0.08rem 0.04rem #f7f7f7;
+    font-size: 0.16rem;
+    text-align: center;
+    line-height: 0.6rem;
+    background: url("../imgages/shouye/lianying-shouye-icon-chuangxin.png") no-repeat 1.2rem 50%;
+    background-size: 0.2rem 0.27rem;
+    background-color: #ffffff;
+    float: left;
+}
+.section_yanfa_lists{
+    font-size: 0.19rem;
+}
+.section_yanfa_lists >li{
+    width: 2.7rem;
+    margin-bottom: 0.2rem;
+    float: left;
+}
+.section_yanfa_lists_a{
+    margin-top: 0.35rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    padding-left: 0.8rem;
+    background: url("../imgages/shouye/A.png") no-repeat 0.45rem 0;
+    background-size: 0.3rem 0.3rem;
+}
+.section_yanfa_lists_b{
+    margin-top: 0.35rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    padding-left: 0.8rem;
+    background: url("../imgages/shouye/B.png") no-repeat 0.45rem 0;
+    background-size: 0.3rem 0.3rem;
+}
+.section_yanfa_lists_c{
+    margin-top: 0.2rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    padding-left: 0.8rem;
+    background: url("../imgages/shouye/C.png") no-repeat 0.4rem 0;
+    background-size: 0.3rem 0.3rem;
+}
+.section_yanfa_lists_d{
+    margin-top: 0.2rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    padding-left: 0.8rem;
+    background: url("../imgages/shouye/D.png") no-repeat 0.4rem 0;
+    background-size: 0.3rem 0.3rem;
+}
+.section_yanfa_lists_e{
+    margin-top: 0.2rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    padding-left: 0.8rem;
+    background: url("../imgages/shouye/E.png") no-repeat 0.4rem 0;
+    background-size: 0.3rem 0.3rem;
+}
+.section_yanfa_mubiao{
+    font-size: 0.18rem;
+    width: 6.5rem;
+    letter-spacing: 0.02rem;
+    padding: 0.25rem;
+    margin:0 auto;
+    padding-top: 1rem;
+    text-align: center;
+    line-height: 0.3rem;
+}
+.section_yanfa_p3{
+    position: absolute;
+    top: 6.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.16rem;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+}
+.section_yanfa_p4{
+    position: absolute;
+    top: 7rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.16rem;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+}
+.section_yanfa_db{
+    position: absolute;
+    top: 7.5rem;
+    width: 100%;
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-justify-content:center;
+    justify-content:center;
+    -moz-box-pack:center;
+    box-pack:center;
+}
+.section_yanfa_db >li{
+    -webkit-box-flex: 1;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;     /* OLD - Firefox 19- */
+    -webkit-flex: 1;      /* Chrome */
+    -ms-flex: 1;           /* IE 10 */
+    flex: 1;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.section_yanfa_db >li >p{
+    margin: 0 auto;
+    height: 2.4rem;
+    width: 2.1rem;
+    border-radius: 0.1rem;
+    background-color: #ffffff;
+    box-shadow:  0 0 0.04rem 0.02rem #d1d1d1;
+    font-size: 0.16rem;
+    letter-spacing: 0.01rem;
+    text-align: center;
+    line-height: 0.2rem;
+}
+.section_yanfa_db >li >p >span{
+    position: relative;
+    bottom: -1.5rem;
+}
+.y{
+    background: url("../imgages/shouye/shouyi.png") no-repeat 50% 0.5rem;
+    background-size: 0.94rem 0.82rem;
+}
+.c{
+    background: url("../imgages/shouye/shangxian.png") no-repeat 50% 0.5rem;
+    background-size: 0.84rem 0.84rem;
+}
+.h{
+    background: url("../imgages/shouye/jishu.png") no-repeat 50% 0.5rem;
+    background-size: 0.76rem 0.9rem;
+}
+.zixun{
+    height: 4rem;
+    background: #494f5f;
+    position: relative;
+}
+.zixun >h2{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0.3rem;
+    font-size: 0.16rem;
+    color: #ffffff;
+    font-weight: 600;
+    background: url("../imgages/shouye/huangse.png") no-repeat center;
+    -webkit-background-size: 7rem 0.01rem;
+    background-size: 7rem 0.01rem;
+}
+.zixun >p{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0.8rem;
+    font-size: 0.18rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+.zixun >ul{
+    position: absolute;
+    top: 1.9rem;
+    width: 100%;
+    height: 1.6rem;
+    background: url("../imgages/shouye/quxian.png");
+    background-size: 100% 1.6rem;
+}
+.zixun >ul >li{
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    font-size: 0.12rem;
+    text-align: center;
+    float: left;
+    display: flex;
+    justify-content:center;
+    align-items:Center;
+    background-size: 1.5rem 1.5rem;
+}
+.zixun >ul >li:first-child{
+    background: url("../imgages/shouye/basisdevelopment.png") no-repeat center;
+    background-size: 1.48rem 1.48rem;
+    top: 0.4rem;
+}
+.zixun >ul >li:nth-child(2){
+    background: url("../imgages/shouye/Consultation.png") no-repeat center;
+    background-size: 1.48rem 1.48rem;
+    top: -0.5rem;
+    left: 1.02rem;
+}
+.zixun >ul >li:nth-child(3){
+    background: url("../imgages/shouye/Formulation.png") no-repeat center;
+    background-size: 1.48rem 1.48rem;
+    top: 0.7rem;
+    left: 1.72rem;
+}
+.zixun >ul >li:nth-child(4){
+    background: url("../imgages/shouye/Online.png") no-repeat center;
+    background-size: 1.48rem 1.48rem;
+    left: 2.87rem;
+}
+.zixun >ul >li:nth-child(5){
+    background: url("../imgages/shouye/Operationpromotion.png") no-repeat center;
+    background-size: 1.48rem 1.48rem;
+    top: -0.5rem;
+    left: 4.14rem;
+}
+.zixun >ul >li:nth-child(6){
+    background: url("../imgages/shouye/Off-boardTrade.png") no-repeat center;
+    background-size: 1.48rem 1.48rem;
+    top: 0.6rem;
+    left: 4.92rem;
+}
+.zixun >ul >li:nth-child(7){
+    background: url("../imgages/shouye/privateplacementframework.png") no-repeat center;
+    background-size: 1.48rem 1.48rem;
+    top: -0.2rem;
+    left: 6.02rem;
+}
+.home_jide{
+    height: 4.8rem;
+    position: relative;
+}
+.home_jide >h2{
+    text-align: center;
+    padding-top: 0.3rem;
+    font-size: 0.36rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+}
+.home_jide >img{
+    padding-top: 0.15rem;
+    height: 0.15rem;
+    width: 4.6rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.3rem;
+}
+.home_jide >h3{
+    text-align: center;
+    padding-top: 0.41rem;
+    font-size: 0.24rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+}
+.home_jide_d{
+    padding-top: 0.22rem;
+}
+.home_jide_d >p{
+    padding-top: 0.22rem;
+    text-align: center;
+    line-height: 0.45rem;
+    font-size: 0.2rem;
+}
+.home_global_box{
+    height: 5.54rem;
+}
+.home_global{
+    width: 7.1rem;
+    height: 5.6rem;
+    margin: 0 auto;
+    background: #494f5f;
+    box-shadow: 0 0 0.08rem 0.04rem #b9b8b8;
+    position: relative;
+    z-index: 50;
+}
+.home_global >h2{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0.3rem;
+    font-size: 0.24rem;
+    color: #ffffff;
+    font-weight: 600;
+    background: url("../imgages/shouye/huangse.png") no-repeat center;
+    -webkit-background-size: 6.6rem 0.01rem;
+    background-size: 6.6rem 0.01rem;
+}
+.home_global >p{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0.75rem;
+    font-size: 0.16rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+.home_global >img{
+    width: 6.85rem;
+    height: 3.28rem;
+    padding-top: 1.3rem;
+    margin: 0 auto;
+}
+.home_global_db{
+    width: 6.85rem;
+    margin: 0 auto;
+    position: relative;
+}
+.home_global_db >li{
+    height: 100%;
+    float: left;
+    font-size: 0.12rem;
+    color: #bdbec2;
+    display: block;
+    position: relative;
+    margin-left: 0.15rem;
+}
+.home_global_db >li >img{
+    position: absolute;
+    left: 0.01rem;
+    top: 0.1rem;
+    height: 0.28rem;
+    width: 0.18rem;
+    display: inline;
+}
+.home_global_db >li >p{
+    line-height: 0.5rem;
+    margin-left: 0.2rem;
+}
+.home_footer{
+    height: 2.58rem;
+    width: 100%;
+    background: #292a33;
+    z-index: 20;
+    margin-top: -0.75rem;
+    position: relative;
+}
+.home_footer >h5{
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #c5c7c6;
+}
+.home_footer >div{
+    width: 80%;
+    height: 0.02rem;
+    background: #ffffff;
+    position: absolute;
+    top: 1.85rem;
+    left: 10%;
+}
+.home_footer >p{
+    position: absolute;
+    top: 2.1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.18rem;
+    letter-spacing: 0.03rem;
+    color: #c5c5c5;
+}
+
+/*回到顶部*/
+.btn{
+    position: fixed;
+    bottom: 1rem;
+    right: 0.12rem;
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 0.1rem;
+    background: #c5c5c5;
+    opacity: 0.8;
+    z-index: 80;
+    display: none;
+}
+.btn >img{
+    height: 0.6rem;
+    width: 0.6rem;
+}

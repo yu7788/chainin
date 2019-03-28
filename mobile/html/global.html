@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <title>链鹰资本-全球资源</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <script src="../js/jquery-1.4.2.min.js"></script>
+</head>
+<body onload="quk()">
+<div id="wrapper">
+    <div id="scroller">
+        <header>
+            <img src="../imgages/shouye/lianying-logo.png" />
+            <div class="daohang"></div>
+            <div class="language">中文
+                <span>
+                           <a href="#">中文</a>
+                            <a href="globalen.html">English</a>
+                       </span>
+            </div>
+            <ul class="daohang_box">
+                <li class="home"><a href="../home.html">首页</a></li>
+                <!--<li class="manage"><a href="manage.html">资本管理</a></li>-->
+                <li class="manage">资本管理</li>
+                <li class="samoye"><a href="samoye.html">萨摩亚交易所</a></li>
+                <li class="blockchain"><a href="blockchain.html">区块链研发</a></li>
+                <li>第三方咨询</li>
+                <li>即得财经</li>
+                <li class="global"><a href="global.html">全球资源</a></li>
+                <li>联系我们</li>
+            </ul>
+        </header>
+
+        <section>
+            <div class="banner">
+                <img src="../imgages/erji/lianying-quanqiuziyuan-banner.png" />
+            </div>
+
+            <div class="global_section">
+                <h3>全球区块链投资与研究联合会</h3>
+                <p class="section_box_p2">由社会精英人士、区块链知名人士、世界组织领导、企业<br />领袖人物以及有关区块链业界精英团队组成。<br />总部设在香港首富李嘉诚别墅。</p>
+
+                <div class="lunbotu">
+                    <ul>
+                        <li class="p1">
+                            <img class="dada" src="../imgages/erji/erji5.jpg" />
+                        </li>
+                        <li class="p2">
+                            <img src="../imgages/erji/erji1.jpg" />
+                        </li>
+                        <li class="p3">
+                            <img src="../imgages/erji/erji3.jpg" />
+                        </li>
+                    </ul>
+                    <div class="big"></div>
+                </div>
+
+                <p class="section_box_p3">旨在创造一个具备开放性、包容性的跨国联盟,<br />为联合会成员寻求共同发展机会，并促进各项跨国投资合作，<br />为最终实现去中心化，公平透明的新世界目标而奋斗。</p>
+                <p class="section_box_p4">与主权国家展开合作，加强国际经贸合作，推广去中心化理念，<br />促进各国经济发展，为区块链企业家与创业者提供国际发展机会。<br />积极发展慈善事业，促进世界均衡发展。
+            </div>
+
+            <div class="global_footer">
+                <h5>联系我们</h5>
+                <div></div>
+                <p>EMAIL:chainin1@hotmail.com</p>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+function quk() {
+    $(function () {
+        $(".banner").slideDown(2000);
+
+        $(".daohang").click(function () {
+            if ($(".daohang_box").css("display") == "none") {
+                $(".daohang_box").fadeIn(600);
+            } else {
+                $(".daohang_box").fadeOut(600);
+            }
+        });
+        $("section").click(function () {
+            $(".daohang_box").fadeOut(600);
+        });
+
+        $(".language").click(function () {
+            if ($(this).find("span").find("a").css("display") == "none") {
+                $(this).find("span").find("a").fadeIn(200);
+            } else {
+                $(this).find("span").find("a").fadeOut(200);
+            }
+        });
+        $("section").click(function () {
+            $(".language").find("span").find("a").fadeOut(200);
+        });
+
+        // 轮播图
+        var timer = "";
+        var arr = ['p1', 'p2', 'p3'];
+        var index = 0;
+        //图片自动轮播
+        timer = setInterval(btn_right, 1500);
+
+        //点击上一张的封装函数
+        function btn_left() {
+            arr.unshift(arr[2]);
+            arr.pop();
+            $('.lunbotu ul').find("li").each(function (i, e) {
+                $(e).removeClass().addClass(arr[i]);
+            })
+            index--;
+            if (index < 0) {
+                index = 2;
+            }
+        }
+
+        //点击下一张的封装函数
+        function btn_right() {
+            arr.push(arr[0]);
+            arr.shift();
+            $('.lunbotu  ul').find("li").each(function (i, e) {
+                $(e).removeClass().addClass(arr[i]);
+            })
+            index++;
+            if (index > 2) {
+                index = 0;
+            }
+        }
+
+
+        // 点击放大
+        $(".lunbotu ul").find("li").click(function () {
+            clearInterval(timer);
+            $(".big").fadeIn(500).html($(this).html());
+            $(".big").find("img").css({
+                height: "4rem",
+                width: "5rem",
+                border: "0.06rem solid #ffffff",
+                boxShadow: "0 0 0.06rem 0.03rem #c6c4c5",
+                borderRadius: "0.1rem"
+            })
+            event.preventDefault();    //阻止默认行为
+            event.stopPropagation();    //  阻止事件冒泡
+        })
+        //点击消失
+        $(".big").click(function () {
+            $(this).hide(0);
+            timer = setInterval(btn_right, 1500);
+
+            event.preventDefault();    //阻止默认行为
+            event.stopPropagation();    //  阻止事件冒泡
+        })
+    });
+}
+</script>
+</html>
